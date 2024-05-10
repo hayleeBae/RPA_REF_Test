@@ -5,7 +5,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1177,821</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1216,813</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ReadData_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -95,12 +95,14 @@
       <AssemblyReference>WindowsBase</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="ReadData" sap:VirtualizedContainerService.HintSize="416,199" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="ReadData" sap:VirtualizedContainerService.HintSize="416,545" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:ReadRange AddHeaders="True" DataTable="[out_dtWord]" DisplayName="Read Range Workbook" sap:VirtualizedContainerService.HintSize="354,111" sap2010:WorkflowViewState.IdRef="ReadRange_1" Range="A1" SheetName="검색" WorkbookPath="Data\Input\검색어.xlsx" />
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="354,173" sap2010:WorkflowViewState.IdRef="LogMessage_1" Message="[&quot;검색할 데이터 가져오기&quot;]" />
+    <ui:ReadRange AddHeaders="True" DataTable="[out_dtWord]" DisplayName="Read Range Workbook" sap:VirtualizedContainerService.HintSize="354,120" sap2010:WorkflowViewState.IdRef="ReadRange_1" Range="A1" SheetName="검색" WorkbookPath="Data\Input\검색어.xlsx" />
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="354,164" sap2010:WorkflowViewState.IdRef="LogMessage_2" Message="[&quot;검색할 데이터 가져오기 완료&quot;]" />
   </Sequence>
 </Activity>
